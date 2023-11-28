@@ -54,6 +54,13 @@ const routes: Array<RouteRecordRaw> = [
     children: pagesEnRouter
   }
 ];
+routes.push({
+  name: 'notFound',
+  path: '/:path(.*)+',
+  redirect: {
+    path: '/zh-CN/component/button'
+  }
+});
 
 console.log('🚀 >> routes:', routes);
 
