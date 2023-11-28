@@ -61,6 +61,10 @@ export const componentMap: Record<string, ComponentDesc> = {
     site: '/zh-CN/component/card',
     props: ["img-url=''"]
   },
+  cardsstacking: {
+    site: '/zh-CN/component/cardsstacking',
+    props: ["img-url=''"]
+  },
   cascader: {
     site: '/zh-CN/component/cascader',
     props: ["v-model=''"]

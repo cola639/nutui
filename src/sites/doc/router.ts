@@ -11,6 +11,7 @@ for (const path in modulesPage) {
     component: modulesPage[path]
   });
 }
+console.log('🚀 >> doc pagesRouter:', pagesRouter);
 
 /* doc.en-US.md */
 const pagesEnRouter: Array<RouteRecordRaw> = [];
@@ -22,6 +23,7 @@ for (const path in modulesEnPage) {
     component: modulesEnPage[path]
   });
 }
+console.log('🚀 >> doc.en Router:', pagesEnRouter);
 
 /* doc.taro.md */
 const modulesPageTaro = import.meta.glob('/src/packages/__VUE/**/*.taro.md');
@@ -36,6 +38,7 @@ for (const path in modulesPageTaro) {
     component: modulesPageTaro[path]
   });
 }
+console.log('🚀 >> doc.taro.pagesEnRouter:', pagesEnRouter);
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -51,13 +54,9 @@ const routes: Array<RouteRecordRaw> = [
     children: pagesEnRouter
   }
 ];
-routes.push({
-  name: 'notFound',
-  path: '/:path(.*)+',
-  redirect: {
-    path: '/zh-CN/component/button'
-  }
-});
+
+console.log('🚀 >> routes:', routes);
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes,

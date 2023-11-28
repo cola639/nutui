@@ -85,6 +85,17 @@
         },
         {
           "version": "3.0.0",
+          "taro": true,
+          "name": "Cardsstacking",
+          "type": "component",
+          "cName": "堆叠卡片",
+          "desc": "堆叠卡片",
+          "sort": 1,
+          "show": true,
+          "author": "cola639"
+        },
+        {
+          "version": "3.0.0",
           "name": "Cell",
           "taro": true,
           "sort": 1,
@@ -1246,6 +1257,7 @@
           "show": true,
           "author": "Drjingfubo"
         },
+
         {
           "version": "3.0.0",
           "name": "Ecard",

@@ -18,7 +18,7 @@ const kebabCase = (str) => {
 
 const getCompName = (name) => {
   if (!packages.length) {
-    cfg.nav.forEach((item, index) => {
+    cfg.nav.forEach((item) => {
       packages = packages.concat(item.packages);
     });
   }
