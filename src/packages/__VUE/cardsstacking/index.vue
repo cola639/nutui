@@ -32,7 +32,7 @@
 import { createComponent } from '@/packages/utils/create';
 import NutPrice from '../price/index.vue';
 import NutTag from '../tag/index.vue';
-const { create } = createComponent('cardstacking');
+const { create } = createComponent('cardsstacking');
 export default create({
   components: {
     NutPrice,
