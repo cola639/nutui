@@ -1,7 +1,7 @@
 <template>
   <view class="demo">
     <h2>{{ translate('basic') }}</h2>
-    <nut-card
+    <nut-cardsstacking
       :img-url="state.imgUrl"
       :title="state.title"
       :price="state.price"
@@ -10,9 +10,9 @@
       :delivery="state.delivery"
       :shop-name="state.shopName"
     >
-    </nut-card>
+    </nut-cardsstacking>
     <h2>{{ translate('customProduct') }}</h2>
-    <nut-card
+    <nut-cardsstacking
       :img-url="state.imgUrl"
       :title="state.title"
       :price="state.price"
@@ -28,9 +28,9 @@
           <span class="word">{{ translate('customPro3') }}</span>
         </div>
       </template>
-    </nut-card>
+    </nut-cardsstacking>
     <h2>{{ translate('customShop') }}</h2>
-    <nut-card
+    <nut-cardsstacking
       :img-url="state.imgUrl"
       :title="state.title"
       :price="state.price"
@@ -52,9 +52,9 @@
           alt=""
         />
       </template>
-    </nut-card>
+    </nut-cardsstacking>
     <h2>{{ translate('customFooter') }}</h2>
-    <nut-card
+    <nut-cardsstacking
       :img-url="state.imgUrl"
       :title="state.title"
       :price="state.price"
@@ -66,7 +66,7 @@
       <template #footer>
         <div class="customize">{{ translate('customContent') }}</div>
       </template>
-    </nut-card>
+    </nut-cardsstacking>
   </view>
 </template>
 
